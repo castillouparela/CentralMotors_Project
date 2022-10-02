@@ -1,2 +1,2 @@
 # CentralMotors_Project
-Concessionaire Central Motors
+The Central Motors dealership has an excellent track record in the sector linked to a wide range of services aimed at its users, especially those in its immediate geographical environment. Currently, it does not have any computer service that allows its correct administration. Consequently, a request for the development of a web application has been published that allows the correct administration of its most important activities such as the pre-sale, commercialization, rental and after-sale of motor vehicles of the most recognized brands in the sector. This project focuses on providing a solution to such a requirement of the company.
