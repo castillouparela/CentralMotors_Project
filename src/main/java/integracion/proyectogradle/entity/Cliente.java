@@ -36,5 +36,14 @@ public class Cliente implements Serializable {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "id_persona=" + id_persona +
+                ", compras=" + compras +
+                ", tipo='" + tipo + '\'' +
+                '}';
+    }
 }
 

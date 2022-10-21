@@ -49,4 +49,14 @@ public class Tecnico implements Serializable {
     public void setVehiculosreparados(byte vehiculosreparados) {
         this.vehiculosreparados = vehiculosreparados;
     }
+    @Override
+    public String toString() {
+        return "Tecnico{" +
+                "id_persona=" + id_persona +
+                ", especialidad='" + especialidad + '\'' +
+                ", experiencia=" + experiencia +
+                ", salario=" + salario +
+                ", vehiculosreparados=" + vehiculosreparados +
+                '}';
+    }
 }

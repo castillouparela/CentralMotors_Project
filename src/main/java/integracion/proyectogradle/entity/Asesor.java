@@ -55,5 +55,15 @@ public class Asesor implements Serializable {
         this.salario = salario;
     }
 
+    @Override
+    public String toString() {
+        return "Asesor{" +
+                "id_persona=" + id_persona +
+                ", comision=" + comision +
+                ", salario=" + salario +
+                ", gestionesactivas=" + gestionesactivas +
+                ", gestionescompletadas=" + gestionescompletadas +
+                '}';
+    }
 }
 

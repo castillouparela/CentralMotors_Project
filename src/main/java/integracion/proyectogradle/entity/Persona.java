@@ -90,5 +90,19 @@ public class Persona implements Serializable {
     public void setPersona_type(String persona_type) {
         this.persona_type = persona_type;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "id_persona=" + id_persona +
+                ", nombrecompleto='" + nombrecompleto + '\'' +
+                ", fechanacimiento=" + fechanacimiento +
+                ", nick='" + nick + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", email='" + email + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", persona_type='" + persona_type + '\'' +
+                '}';
+    }
 }
 
