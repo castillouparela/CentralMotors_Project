@@ -19,10 +19,8 @@ class PersonaServiceTest {
 
     @InjectMocks
     PersonaService personaService;
-
     @Mock
     IPersonaDao personaDao;
-
     Persona persona;
 
     @BeforeEach

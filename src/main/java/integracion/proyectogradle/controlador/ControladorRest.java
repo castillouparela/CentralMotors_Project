@@ -20,6 +20,11 @@ import java.util.Map;
 //permisos que le doy a ciertas aplicaciones para pedir, enviar información, etc.
 //con * cualquier ip se puede conectar
 public class ControladorRest {
+    @GetMapping("/")
+    public String index (){  //Método de prueba --> OPTIONAL <--
+        return "Inicio exitoso";
+    }
+
     //---PERSONAS---//
     @Autowired
     private IPersonaService personaService;
