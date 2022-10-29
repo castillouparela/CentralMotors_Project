@@ -44,7 +44,6 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: java-app
-          path: '${{ github.workspace }}/build/libs/*.jar'
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -54,4 +53,3 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9DEEE103D9874A2892A8C1396CF8B652 }}
           package: '*.jar'
-          path: '${{ github.workspace }}/build/libs/*.jar'
