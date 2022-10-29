@@ -43,8 +43,8 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: java-app
-          #path: '${{ github.workspace }}/build/libs/*.jar'
-          path: D:\a\CentralMotors_Project\CentralMotors_Project\build\libs\*.jar
+          path: '${{ github.workspace }}/build/libs/*.jar'
+          #path: D:\a\CentralMotors_Project\CentralMotors_Project\build\libs\*.jar
 
   deploy:
     runs-on: windows-latest
@@ -58,7 +58,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: java-app
-          path: D:\a\CentralMotors_Project\CentralMotors_Project\build\libs\*.jar
+          path: '${{ github.workspace }}/build/libs/*.jar'
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
