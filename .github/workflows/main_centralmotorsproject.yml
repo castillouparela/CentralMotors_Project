@@ -21,9 +21,9 @@ jobs:
         with:
           java-version: '8'
 
-      - name: Build with Gradle
-        #run: mvn clean install
-        run: ./gradlew wrapper --gradle-version=7.5.1
+      - name: Build with Maven
+        run: mvn clean install
+        #run: ./gradlew wrapper --gradle-version=7.5.1
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -43,7 +43,6 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: java-app
-          path: '${{ github.workspace }}/build/libs/*.jar'
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
