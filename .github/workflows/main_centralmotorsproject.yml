@@ -19,12 +19,12 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v1
         with:
-          java-version: '1.8'
+          java-version: '8'
 
       - name: Build with Gradle
         #run: mvn clean install
-        #run: ./gradlew wrapper --gradle-version=7.5.1
-        run: sdk install gradle 7.5.1
+        run: ./gradlew wrapper --gradle-version=7.5.1
+        #run: sdk install gradle 7.5.1
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -44,7 +44,6 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: java-app
-          path: '${{ github.workspace }}/build/libs/*.jar'
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
