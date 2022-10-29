@@ -23,8 +23,8 @@ jobs:
 
       - name: Build with Gradle
         #run: mvn clean install
-        #run: ./gradlew wrapper --gradle-version=7.5.1
-        run: ./gradlew clean build
+        run: ./gradlew wrapper --gradle-version=7.5.1
+        #run: ./gradlew clean build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
