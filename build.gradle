@@ -14,7 +14,11 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.7.5'
 	implementation 'org.springframework.boot:spring-boot-starter-web:2.7.5'
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.5.3' // -> version estable <-
+
+	implementation 'org.springframework.boot:spring-boot-devtools:2.7.5'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
 	testImplementation 'org.mockito:mockito-core:4.8.1'
